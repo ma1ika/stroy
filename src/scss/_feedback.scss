@@ -1,0 +1,78 @@
+.feedback{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #F6F6F6;
+    overflow: hidden;
+    width: 100vw;
+    .owl-carousel .owl-stage-outer{
+        overflow: inherit;
+    }
+    &__top{
+        position: relative;
+
+    }
+    &__title{
+        position: absolute;
+    }
+    
+    .owl-nav{
+        cursor: pointer;
+        display: flex;
+        gap: 12px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -52px;
+
+        .feedback__prev, .feedback__next{
+            background: #FFFFFF;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            border: 1px solid #D1D1D3;
+            
+        }
+        .owl-prev, .owl-next{
+            display: none;
+        }
+    }
+
+    &-slide{
+        padding: 24px;
+        background: #FFFFFF;
+        border: 1px solid #E8E9EA;
+        position: relative;
+        
+        margin-top: 20px;
+
+        &__name{
+            @include text(700, 18px, 136%);
+            color: #2F323A;
+            display: inline-block;
+            margin-left: 12px;
+        }
+
+        &__text{
+            @include text(400, 16px, 150%);
+            color: #2F323A;
+            margin-top: 12px;
+        }
+
+        &__date{
+            @include text(400, 15px, 145%);
+            color: #8B8D92;
+            margin-top: 15px;
+        }
+
+        &__prent{
+            width: 32px !important;
+            height: 24px;
+            display: inline-block;
+        }
+
+
+    }
+}

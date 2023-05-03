@@ -1,0 +1,18 @@
+.about{
+    padding: 40px;
+    &__cont-block{
+        width: 1360px;
+        height: 456px;
+        background: url('../img/about/about-img.png') center/cover no-repeat;
+        margin: 0;
+        padding: 88px 492px 88px 192px;
+    }
+    &__title{
+        @include text(600, 34px, 130%);
+        margin-bottom: 20px;
+        color: #2F323A;
+    }
+    &__text{
+        @include text(400, 16px, 150%);
+    }
+}

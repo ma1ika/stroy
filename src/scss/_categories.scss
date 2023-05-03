@@ -1,0 +1,18 @@
+.categories{
+    @include section-top();
+    
+    &__card{
+        background: #F6F6F6;
+        margin-top: 16px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__card-title{
+        @include text(500, 18px, 136%);
+        text-align: center;
+        color: #2F323A;
+        padding: 12px 12px 16px 12px;
+    }
+
+}

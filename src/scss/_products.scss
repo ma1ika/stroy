@@ -1,0 +1,48 @@
+.products{
+    padding-top: 80px;
+
+    &__title{
+        @include text(600, 34px, 130%);
+        color: #2F323A;
+        margin-bottom: 20px;
+    }
+    &__card{
+        background: #FFFFFF;
+        border: 1px solid #E8E9EA;
+        margin-bottom: 16px;
+    }
+    &__card-bottom{
+        padding: 16px;
+        border-top: 1px solid #E8E9EA;
+    }
+    &__card-text{
+        @include text(400, 16px, 150%);
+        color: #2F323A;
+        max-height: 72px;
+        min-height: 72px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        margin-bottom: 12px;
+    }
+    &__card-price{
+        @include text(700, 20px, 140%);
+        color: #171B24;
+        margin-bottom: 16px;
+    }
+    &__card-btn{
+        @include text(400, 18px, 136%);
+        padding: 12px 0;
+        text-align: center;
+        width: 100%;
+        color: #171B24;
+        background: #FCEC41;
+        display: inline-block;
+    }
+    &__card-img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

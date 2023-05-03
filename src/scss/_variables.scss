@@ -1,0 +1,27 @@
+@mixin text($fw, $fs, $fh){
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $fh;
+    
+    color: #5D6066; 
+}
+
+@mixin section-top{
+    padding-top: 80px ;
+    &__title{
+        @include text(600, 34px, 130%);
+        
+        color: #2F323A;
+    }
+
+    &__all-btn{
+        @include text(400, 18px, 136%);
+        padding: 12px 16px 12px 24px ;
+         
+        background: #FFFFFF;
+        border: 1px solid #D1D1D3;
+        color: #171B24;
+    }
+}

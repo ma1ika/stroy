@@ -1,0 +1,98 @@
+.header {
+    .header-top {
+        background: #F6F6F6;
+        padding: 11px 0;
+
+        &__links{
+            gap: 24px;
+        }
+		&__location {
+            gap: 8px;
+		}
+
+		&__link {
+            @include text(400, 15px, 145%);
+            &:hover{
+                color: #2F323A;
+                cursor: pointer;
+            }
+		}
+}
+    .header-middle{
+        padding: 16px 0;
+        border-bottom: solid 1px #E8E9EA;
+
+        &__common{
+            gap: 16px;
+        }
+
+        &__btn{
+            gap: 8px;
+            padding: 12px 20.5px;
+            background: #FCEC41;
+            @include text(500, 18px, 136%);
+            color: #171B24;
+            &:hover{
+                background: #2F323A;
+                color: #FFFFFF;
+            }
+        }
+
+        &__form{
+            width: 444px;
+            position: relative;
+            
+        }
+
+        &__form-input{
+            width: 444px;
+            height: 48px;
+            background: #F6F6F6;
+            border: none;
+            border-bottom: solid 1px #D1D1D3;
+            padding: 0 16px;
+            @include text(400, 18px, 136%);
+            color: #8B8D92;
+            &:focus{
+                outline: none;
+            }
+           
+        }
+
+        &__form-btn{
+            background: none;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 48px;
+            padding: 0 16px;
+            
+        }
+
+        &__profile-item{
+            gap: 16px;
+            text-align: center;
+            width: 82px;
+            
+        }
+        &__profile-link{
+            @include text(400, 15px, 145%);
+            &:hover{
+                color: #2F323A;
+                cursor: pointer;
+            }
+
+        }
+        
+    }
+    .header-bottom {
+        padding: 10px 0;
+        border-bottom: solid 1px #E8E9EA;
+		&__link {
+            @include text(400, 16px, 150%);
+		}
+}
+}
+
+

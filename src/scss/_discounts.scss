@@ -1,0 +1,75 @@
+.discounts{
+    @include section-top();
+    .discount-card{
+        border: 1px solid #E8E9EA;
+        margin-top: 16px;
+        &__left{
+            position: relative;
+            
+        }
+        &__img{
+            object-fit: cover;
+        }
+
+        &__label{
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            padding: 4px 8px;
+            @include text(400, 15px, 145%);
+            color: #171B24;
+            background: #FFFFFF;
+
+            border: 2px solid #FBE303;
+            }
+        
+        &__right{
+            border-left: 1px solid #E8E9EA;
+            padding: 16px ;
+            width: 60%;
+            
+        }
+
+        &__text{
+            @include text(400, 16px, 150%);
+            color: #2F323A;
+            margin-bottom: 12px;
+            max-height: 72px;
+            min-height: 72px;
+            overflow: hidden;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            
+
+
+        }
+
+        &__price{
+            @include text(700, 20px, 140%);
+            color: #171B24;
+
+        }
+
+        &__old-price{
+            margin-left: 8px;
+            @include text(400, 16px, 24px);
+            color: #8B8D92;
+            text-decoration: line-through;
+        }
+
+        &__button{
+            @include text(400, 18px, 150%);
+            display: inline-block;
+            color: #171B24;
+            background: #FCEC41;
+            padding: 12px 0;
+            text-align: center;
+            margin-top: 16px;
+            width: 100%;
+        }
+        
+    }
+    
+}

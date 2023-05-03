@@ -1,0 +1,91 @@
+.delivery{
+  &-home{
+    margin: 40px ;
+    padding: 40px 740px 60px 100px;
+    background: url('../img/delivery/delivery-home.png') center/cover no-repeat;
+    &__title{
+      margin-top: 20px;
+      @include text(700, 48px, 120%);
+      color: #2F323A;
+  }
+    &__text{
+      margin-top: 20px;
+      @include text(400, 20px, 150%);
+      color: #2F323A;
+  }
+}
+  &-breadCrumps{
+    &__link{
+        @include text(400, 16px, 150%);
+    }
+  }
+
+  &-orderSteps{
+    margin-top: 80px;
+    &__title{
+      @include text(600, 34px, 130%);
+      color: #2F323A;
+    }
+    &__icon{
+      margin-top: 32px;
+    }
+    &__text{
+      margin-top: 12px;
+      @include text(500, 16px, 150%);
+      color: #2F323A;
+    }
+  }
+  
+  .accordion-block{
+    border: 1px solid #D1D1D3;
+    padding: 80px 196px 80px 196px;
+    margin: 80px 0 80px 0;
+    &__title{
+      @include text(600, 34px, 140%);
+      color: #2F323A;
+      margin-bottom: 20px;
+    }
+    .accordion {
+      background: #F6F6F6;
+      margin-bottom: 12px;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+      &-title{
+        &__text{
+          @include text(400, 18px, 136%);
+        }
+        &__icon{
+          width: 12px;
+          height: 6px;       
+        }
+      }
+      &__info{
+        @include text(400, 16px, 150%);
+      }
+      &.active{
+        .accordion__info{
+          max-height: max-content;
+        }
+      }
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+    
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+}

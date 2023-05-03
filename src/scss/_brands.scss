@@ -1,0 +1,11 @@
+.brands{
+    @include section-top();
+    margin-bottom: 80px;
+
+    &__img{
+        border: 1px solid #E8E9EA;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/manrope" rel="stylesheet">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="header-top__location header-top__link d-flex align-items-center">
+                        <img class="header-top__img" src="../../img/header/location.svg" alt="location">
+                        Москва
+                    <a> 
+                    <div class="d-flex header-top__links">
+                        <a class="header-top__link">Бренды</a>
+                        <a href="../delivery/index.html" class="header-top__link">Доставка</a>
+                        <a class="header-top__link">Возврат</a>
+                        <a class="header-top__link">Документация</a>
+                        <a href="#" class="header-top__link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center"> 
+                    <a href="../../../stroyka.html" class="header-middle__logo">
+                        <img class="header-middle__logo-img" src="../../img/header/Logo.svg" alt="logo">
+                    </a>
+
+                    <div class="d-flex header-middle__common">
+                        <div class="d-flex align-items-center header-middle__btn">
+                            <img class="header-middle__btn-icon" src="../../img/header/catalog-icon.svg" alt="">
+                            <a href="#" class="header-middle__btn-link">Каталог</a>
+                        </div>
+                        <div class=" d-flex align-items-center header-middle__form">
+                            <input class="header-middle__form-input" type="text" placeholder="Поиск">
+                            <button class="header-middle__form-btn" type="submit">
+                                <img class="header-middle__form-icon" src="../../img/header/search.svg" alt="search">
+                            </button>
+                            
+                        </div>
+
+                        <div class=" d-flex align-items-center header-middle__profile">
+                            <div class=" header-middle__profile-item" id="open-login-popup">
+                                <img class="header-middle__profile-img" src="../../img/header/profile-icon.svg" alt="profile-icon" > <br>
+                                <a href="#" class="header-middle__profile-link">Профиль</a>
+                            </div>
+                            <div class="header-middle__profile-item">
+                                <img class="header-middle__profile-img" src="../../img/header/box-icon.svg" alt="profile-icon" > <br>
+                                <a href="#" class="header-middle__profile-link">Заказы</a>
+                            </div>
+                            <div class="header-middle__profile-item">
+                                <img class="header-middle__profile-img" src="../../img/header/shop-icon.svg" alt="profile-icon" > <br>
+                                <a href="#" class="header-middle__profile-link">Корзина</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <a href="#" class="header-bottom__link">Акции</a>
+                    <a href="#" class="header-bottom__link">Строительные материалы</a>
+                    <a href="#" class="header-bottom__link">Керамическая плитка</a>
+                    <a href="#" class="header-bottom__link">Краски</a>
+                    <a href="#" class="header-bottom__link">Сантехника</a>
+                    <a href="#" class="header-bottom__link">Напольные покрытия</a>
+                    <a href="#" class="header-bottom__link">Инструменты</a>
+                    <a href="#" class="header-bottom__link">Обои</a>
+                    <a href="#" class="header-bottom__link">Окна</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="contacts-main">
+        <div class="container">
+            <section class="contacts">
+                <div class="contacts-breadCrumps">
+                    <a href="../../../stroyka.html" class="contacts-breadCrumps__link">Главная</a>
+                    <a href="#" class="contacts-breadCrumps__link">→ Контакты</a>
+                </div>
+                <h2 class="contacts__title">Контакты</h2>
+                <div id="map" class="contacts__map" style="width:100%; height:340px"></div>
+                <div class="contacts__second-title">ООО «СтройкаСтор»</div>
+                <div class="row">
+                    <div class="col-4">
+                        <p class="contacts__text">115114, г. Москва, Дербеневская набережная, д. 7, стр. 8</p>
+                        <p class="contacts__text">Павелецкая
+                            Автобусы 13, 106, 158, 184, 632
+                            Остановка «Дербеневская наб., д. 7»</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="contacts__text">
+                            ОГРН: 1047796688554 <br>
+                            ИНН 7703528301 <br>
+                            КПП 774850001<br>
+                            ОКТМО 45380000<br>
+                            ОГРН 1047796688554<br>
+                            Расчетный рублевый счет: 40702810900001403352<br>
+                            Банк: АО «Сбербанк» г. Москва<br>
+                            Корреспондентский счет: 30101810200000000700<br>
+                            БИК: 044525700<br>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="contacts__text">
+                            Поддержка клиентов<br>
+                            info@stroykastore.ru
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="about">
+            <div class="about__cont-block">
+                <div class="about__title">О компании</div>
+                <div class="about__text">В СтройкаСтор вы всегда можете купить все необходимые товары для ремонта домаи дачи. Хотите сделать ремонт в квартире? Строите загородный дом? Используйте строительные и отделочные материалы из нашего каталога. <br>
+                    Быстрая доставка строительных товаров по низким ценам сделает ваши покупки более приятными. Ремонт может стоить дешево, если делать его с нами. Для вас всегда в наличии более 30 000 товаров для строительства по низким ценам каждый день.
+                    СтройкаСтор — это широкий ассортимент товаров для дома и ремонта недорого; Возможность заказать строительные и отделочные материалы для дома и дачи.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <a href="../../../stroyka.html" class="footer-left__logo"><img src="../../img/footer/logo footer.png" alt="logo"></a>
+                    <a href="#" class="d-flex align-items-center footer-left__text"><img src="../../img/footer/mail.png" alt="">info@stroykastore.ru</a >
+                    <a href="#" class="d-flex align-items-center footer-left__text"><img src="../../img/footer/location.png" alt="">Москва, ул. Камушкина 10</a>
+                </div>
+                <div class="nav">
+                    <div class="row d-flex">
+                        <div class="col-4">
+                            <ul>
+                                <li><a class="footer-right__link" href="#">Личный кабинет</a> </li>
+                                <li><a class="footer-right__link" href="#">Заказы</a> </li>
+                                <li><a class="footer-right__link" href="#">Избранное</a> </li>
+                                <li><a class="footer-right__link" href="#">Корзина</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul>
+                                <li><a class="footer-right__link" href="#">Каталог</a> </li>
+                                <li><a class="footer-right__link" href="#">Акции</a> </li>
+                                <li><a class="footer-right__link" href="#">Бренды</a> </li>
+                                <li><a class="footer-right__link" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul>
+                                <li><a class="footer-right__link" href="#">Стать продавцом</a> </li>
+                                <li><a class="footer-right__link" href="../../pages/delivery/index.html">Доставка</a> </li>
+                                <li><a class="footer-right__link" href="#">Возврат</a> </li>
+                                <li><a class="footer-right__link" href="#">Документация</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom d-flex justify-content-between align-items-center">
+                <div class="footer-bottom__text">© СтройкаСтор</div>
+                <img src="../../img/footer/visa.png" alt="" class="footer-bottom__logos">
+                <div class="footer-bottom__text">Cделано в KRUGLOV STUDIO</div>
+            </div>
+        </div>
+    </footer>
+    <script src="./contacts.js"></script>
+</body>
+</html>

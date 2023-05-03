@@ -1,0 +1,24 @@
+.contacts{
+    padding-top: 40px;
+    &-breadCrumps{
+        &__link{
+            @include text(400, 16px, 150%);
+        }
+    }
+    &__title{
+        margin-top: 20px;
+        @include text(700, 48px, 120%);
+        color: #2F323A;
+    }
+    &__map{
+        margin: 40px 0 80px 0;
+    }
+    &__second-title{
+        @include text(600, 34px, 130%);
+        color: #2F323A;
+    }
+    &__text{
+        margin-top: 20px;
+        @include text(400, 18px, 150%);
+    }
+}
