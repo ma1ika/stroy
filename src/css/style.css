@@ -627,7 +627,6 @@ ul li {
 .overlay .login-popup {
   padding: 36px;
   color: #2F323A;
-  flex-direction: column;
   position: absolute;
   max-width: 376px;
   width: 100%;
@@ -646,6 +645,8 @@ ul li {
   line-height: 130%;
   color: #5D6066;
   margin-bottom: 24px;
+  text-align: center;
+  color: #171B24;
 }
 .overlay .login-popup__label {
   font-family: "Manrope";
@@ -655,9 +656,10 @@ ul li {
   line-height: 150%;
   color: #5D6066;
   margin-bottom: 8px;
+  display: block;
+  color: #171B24;
 }
 .overlay .login-popup__input {
-  margin-bottom: 24px;
   padding: 12px 0 12px 16px;
   font-family: "Manrope";
   font-style: normal;
@@ -666,6 +668,13 @@ ul li {
   line-height: 136%;
   color: #5D6066;
   color: #8B8D92;
+  border: none;
+  background: #F6F6F6;
+  border-bottom: 1px solid #D1D1D3;
+  width: 100%;
+}
+.overlay .login-popup input[type=email] {
+  margin-bottom: 24px;
 }
 .overlay .login-popup__forgot-pass {
   font-family: "Manrope";
@@ -674,9 +683,8 @@ ul li {
   font-size: 15px;
   line-height: 145%;
   color: #5D6066;
-  display: inline-block;
-  background: #FCEC41;
-  padding: 12px 24px;
+  display: block;
+  margin: 12px 0 24px 0;
 }
 .overlay .login-popup__enter-btn {
   font-family: "Manrope";
@@ -685,6 +693,13 @@ ul li {
   font-size: 18px;
   line-height: 136%;
   color: #5D6066;
+  display: inline-block;
+  background: #FCEC41;
+  padding: 12px 24px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #171B24;
 }
 .overlay .login-popup__reg {
   font-family: "Manrope";
@@ -693,6 +708,12 @@ ul li {
   font-size: 18px;
   line-height: 136%;
   color: #5D6066;
+  background: #FFFFFF;
+  border: none;
+  border: 1px solid #D1D1D3;
+  padding: 12px 0 12px 0;
+  width: 100%;
+  color: #171B24;
 }
 .overlay .reg-popup {
   position: absolute;
