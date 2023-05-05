@@ -50,6 +50,10 @@ $(document).ready(function(){
         $('.reg-popup').fadeIn(1000)
         $('.login-popup').fadeOut(1000)
     })
+
+    $('.burger-menu').click(function(){
+        $('.header-bottom').toggleClass('active')
+    })
   });
 
 

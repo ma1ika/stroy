@@ -12,76 +12,105 @@
 
 </head>
 <body>
-    <header class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a class="header-top__location header-top__link d-flex align-items-center">
-                        <img class="header-top__img" src="./src/img/header/location.svg" alt="location">
-                        Москва
-                    <a>
-                    <div class="d-flex header-top__links">
-                        <a class="header-top__link">Бренды</a>
-                        <a href="./src/pages/delivery/index.html" class="header-top__link">Доставка</a>
-                        <a class="header-top__link">Возврат</a>
-                        <a class="header-top__link">Документация</a>
-                        <a href="./src/pages/contacts/index.html" class="header-top__link">Контакты</a>
+    <header class="header" id="header">
+        <div class="header-desktop">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="header-top__location header-top__link d-flex align-items-center">
+                            <img class="header-top__img" src="./src/img/header/location.svg" alt="location">
+                            Москва
+                        <a> 
+                        <div class="d-flex header-top__links">
+                            <a class="header-top__link">Бренды</a>
+                            <a href="./src/pages/delivery/index.html" class="header-top__link">Доставка</a>
+                            <a href="" class="header-top__link">Возврат</a>
+                            <a class="header-top__link">Документация</a>
+                            <a href="./src/pages/contacts/index.html" class="header-top__link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header-middle">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center"> 
+                        <a href="./index.html" class="header-middle__logo">
+                            <img class="header-middle__logo-img" src="./src/img/header/Logo.svg" alt="logo">
+                        </a>
+    
+                        <div class="d-flex header-middle__common">
+                            <div class="d-flex align-items-center header-middle__btn">
+                                <img class="header-middle__btn-icon" src="./src/img/header/catalog-icon.svg" alt="">
+                                <a href="#" class="header-middle__btn-link">Каталог</a>
+                            </div>
+                            <form class=" d-flex align-items-center header-middle__form">
+                                <input class="header-middle__form-input" type="text" placeholder="Поиск">
+                                <button class="header-middle__form-btn" type="submit">
+                                    <img class="header-middle__form-icon" src="./src/img/header/search.svg" alt="search">
+                                </button>
+                            </form>
+    
+                            <div class=" d-flex align-items-center header-middle__profile">
+                                <div class=" header-middle__profile-item" id="open-login-popup">
+                                    <img class="header-middle__profile-img" src="./src/img/header/profile-icon.svg" alt="profile-icon" > <br>
+                                    <a href="#" class="header-middle__profile-link">Профиль</a>
+                                </div>
+                                <div class="header-middle__profile-item">
+                                    <img class="header-middle__profile-img" src="./src/img/header/box-icon.svg" alt="profile-icon" > <br>
+                                    <a href="#" class="header-middle__profile-link">Заказы</a>
+                                </div>
+                                <div class="header-middle__profile-item">
+                                    <img class="header-middle__profile-img" src="./src/img/header/shop-icon.svg" alt="profile-icon" > <br>
+                                    <a href="#" class="header-middle__profile-link">Корзина</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <a href="#discounts" class="header-bottom__link">Акции</a>
+                        <a href="#" class="header-bottom__link">Строительные материалы</a>
+                        <a href="#" class="header-bottom__link">Керамическая плитка</a>
+                        <a href="#" class="header-bottom__link">Краски</a>
+                        <a href="#" class="header-bottom__link">Сантехника</a>
+                        <a href="#" class="header-bottom__link">Напольные покрытия</a>
+                        <a href="#" class="header-bottom__link">Инструменты</a>
+                        <a href="#" class="header-bottom__link">Обои</a>
+                        <a href="#" class="header-bottom__link">Окна</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-middle">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center"> 
-                    <a href="#" class="header-middle__logo">
-                        <img class="header-middle__logo-img" src="./src/img/header/Logo.svg" alt="logo">
-                    </a>
 
-                    <div class="d-flex header-middle__common">
-                        <div class="d-flex align-items-center header-middle__btn">
-                            <img class="header-middle__btn-icon" src="./src/img/header/catalog-icon.svg" alt="">
-                            <a href="#" class="header-middle__btn-link">Каталог</a>
+        <div class="header-mobile">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="burger-menu">
+                            <span class="burger-menu__line"></span>
                         </div>
-                        <div class=" d-flex align-items-center header-middle__form">
-                            <input class="header-middle__form-input" type="text" placeholder="Поиск">
-                            <button class="header-middle__form-btn" type="submit">
-                                <img class="header-middle__form-icon" src="./src/img/header/search.svg" alt="search">
+                        <a href="./index.html" class="header-top__logo">
+                            <img class="header-top__logo-img" src="./src/img/header/Logo.svg" alt="logo">
+                        </a>
+                        <div class="header-top__profile-item">
+                            <img class="header-top__profile-img" src="./src/img/header/shop-icon.svg" alt="profile-icon" >
+                        </div>
+                        <form class=" d-flex align-items-center header-top__form">
+                            <input class="header-top__form-input" type="text" placeholder="Поиск">
+                            <button class="header-top__form-btn" type="submit">
+                                <img class="header-top__form-icon" src="./src/img/header/search.svg" alt="search">
                             </button>
-                            
-                        </div>
-
-                        <div class=" d-flex align-items-center header-middle__profile">
-                            <div class=" header-middle__profile-item" id="open-login-popup">
-                                <img class="header-middle__profile-img" src="./src/img/header/profile-icon.svg" alt="profile-icon" > <br>
-                                <a href="#" class="header-middle__profile-link">Профиль</a>
-                            </div>
-                            <div class="header-middle__profile-item">
-                                <img class="header-middle__profile-img" src="./src/img/header/box-icon.svg" alt="profile-icon" > <br>
-                                <a href="#" class="header-middle__profile-link">Заказы</a>
-                            </div>
-                            <div class="header-middle__profile-item">
-                                <img class="header-middle__profile-img" src="./src/img/header/shop-icon.svg" alt="profile-icon" > <br>
-                                <a href="#" class="header-middle__profile-link">Корзина</a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="header-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center ">
-                    <a href="#" class="header-bottom__link">Акции</a>
-                    <a href="#" class="header-bottom__link">Строительные материалы</a>
-                    <a href="#" class="header-bottom__link">Керамическая плитка</a>
-                    <a href="#" class="header-bottom__link">Краски</a>
-                    <a href="#" class="header-bottom__link">Сантехника</a>
-                    <a href="#" class="header-bottom__link">Напольные покрытия</a>
-                    <a href="#" class="header-bottom__link">Инструменты</a>
-                    <a href="#" class="header-bottom__link">Обои</a>
-                    <a href="#" class="header-bottom__link">Окна</a>
-                </div>
+            <div class="header-bottom">
+                <a href="" class="header-bottom__link">ug'iip</a>
             </div>
         </div>
     </header>
@@ -115,7 +144,7 @@
             </section>
 
 
-            <section class="discounts">
+            <section class="discounts" id="discounts">
                 <div class="container">
                     <div class="d-flex justify-content-between">
                         <h2 class="discounts__title">
@@ -209,7 +238,6 @@
                     </div>
             </section>
 
-
             <section class="categories">
                 <div class="container">
                     <div class="d-flex justify-content-between">
@@ -299,6 +327,7 @@
 
                 </div>
             </section>
+
             <section class="products">
                 <div class="container">
                     <div class="products__title">
@@ -485,7 +514,6 @@
                 </div>
             </section>
 
-
             <section class="brands">
                 <div class="container">
                     <div class="d-flex justify-content-between">
@@ -626,7 +654,6 @@
             </section>
         </main>
 
-
         <footer class="footer">
             <div class="container">
                 <div class="footer-top">
@@ -706,7 +733,7 @@
             </div>
             <div class="popup-close-btn"></div>
         </div>
-
+        <a href="#header" class="to-top-btn"></a>
         <script src="./src/libs/jquery/jquery.js"></script>
         <script src="./src/libs/owl/owl.carousel.min.js"></script>          
         <script src="./src/js/main.js"></script>

@@ -43,6 +43,9 @@
             background: #F6F6F6;
             border-bottom: 1px solid #D1D1D3;
             width: 100%;
+            &:focus{
+                outline: none;
+            }
 		}
         input[type=email]{
             margin-bottom: 24px;
