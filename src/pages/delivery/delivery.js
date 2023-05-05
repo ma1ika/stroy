@@ -1,5 +1,5 @@
-// $(document).ready(function(){
-//     $('accordion').click(function(){
-//         $('.accordion')
-//     })
-// })
+$(document).ready(function(){
+    $('.accordion').click(function(){
+        $(this).toggleClass('active')
+    })
+ })

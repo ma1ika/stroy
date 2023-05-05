@@ -68,24 +68,25 @@
       }
       &__info{
         @include text(400, 16px, 150%);
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #F6F6F6;
       }
       &.active{
         .accordion__info{
           max-height: max-content;
+          padding-top: 16px;
+          
+        }
+      }
+      &.active{
+        .accordion-title__icon{
+          transform: rotate(180deg);
         }
       }
     }
     
-    .active, .accordion:hover {
-      background-color: #ccc;
-    }
-    
-    .panel {
-      padding: 0 18px;
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-    }
   }
 }

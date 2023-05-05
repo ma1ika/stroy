@@ -902,17 +902,16 @@ ul li {
   font-size: 16px;
   line-height: 150%;
   color: #5D6066;
-}
-.delivery .accordion-block .accordion.active .accordion__info {
-  max-height: max-content;
-}
-.delivery .accordion-block .active, .delivery .accordion-block .accordion:hover {
-  background-color: #ccc;
-}
-.delivery .accordion-block .panel {
-  padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  background-color: #F6F6F6;
+}
+.delivery .accordion-block .accordion.active .accordion__info {
+  max-height: max-content;
+  padding-top: 16px;
+}
+.delivery .accordion-block .accordion.active .accordion-title__icon {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */
