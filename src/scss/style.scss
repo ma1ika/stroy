@@ -19,6 +19,21 @@ a, a:hover{
 ul li{
   list-style: none;
 }
+
+.to-top-btn{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 50px;
+  right: 35px;
+  background: white;
+  border: 1px solid  #FBE303;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+}
 @import'_variables.scss';
 @import'_header.scss';
 @import'_home.scss';

@@ -53,8 +53,20 @@ $(document).ready(function(){
 
     $('.burger-menu').click(function(){
         $('.header-bottom').toggleClass('active')
+        $('.burger-menu').toggleClass('active')
+    })
+
+    $(window).on('scroll', function(){
+        if($(window).scrollTop() > 500){
+            $('.to-top-btn').fadeIn()
+            $('.to-top-btn').css({'display': 'flex'})
+        } else {
+            $('.to-top-btn').fadeOut()
+        }
     })
   });
+
+   
 
 
 

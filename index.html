@@ -97,9 +97,9 @@
                         <a href="./index.html" class="header-top__logo">
                             <img class="header-top__logo-img" src="./src/img/header/Logo.svg" alt="logo">
                         </a>
-                        <div class="header-top__profile-item">
+                        <a class="header-top__profile-item" href="">
                             <img class="header-top__profile-img" src="./src/img/header/shop-icon.svg" alt="profile-icon" >
-                        </div>
+                        </a>
                         <form class=" d-flex align-items-center header-top__form">
                             <input class="header-top__form-input" type="text" placeholder="Поиск">
                             <button class="header-top__form-btn" type="submit">
@@ -110,7 +110,44 @@
                 </div>
             </div>
             <div class="header-bottom">
-                <a href="" class="header-bottom__link">ug'iip</a>
+                <div class="container">
+                    <div class="header-bottom__profile">
+                        <div class=" header-bottom__profile-item" id="catalog">
+                            <img class="header-bottom__profile-img" src="./src/img/header/catalog-icon.svg" alt="">
+                            <a href="#" class="header-bottom__profile-link">Каталог</a>
+                        </div>
+                        <div class=" header-bottom__profile-item" id="open-login-popup">
+                            <img class="header-bottom__profile-img" src="./src/img/header/profile-icon.svg" alt="profile-icon" > <br>
+                            <a href="#" class="header-bottom__profile-link">Профиль</a>
+                        </div>
+                        <div class="header-bottom__profile-item">
+                            <img class="header-bottom__profile-img" src="./src/img/header/box-icon.svg" alt="profile-icon" > <br>
+                            <a href="#" class="header-bottom__profile-link">Заказы</a>
+                        </div>
+                    </div>
+                    <a class="header-bottom__location header-bottom__link d-flex align-items-center">
+                        <img class="header-bottom__img" src="./src/img/header/location.svg" alt="location">
+                        Москва
+                    <a> 
+                    <div class="d-flex header-bottom__links">
+                        <a href="#discounts" class="header-bottom__link">Акции</a>
+                        <a href="" class="header-bottom__link">Строительные материалы</a>
+                        <a href="" class="header-bottom__link">Керамическая плитка</a>
+                        <a href="" class="header-bottom__link">Краски</a>
+                        <a href="" class="header-bottom__link">Сантехника</a>
+                        <a href="" class="header-bottom__link">Напольные покрытия</a>
+                        <a href="" class="header-bottom__link">Инструменты</a>
+                        <a href="" class="header-bottom__link">Обои</a>
+                        <a href="" class="header-bottom__link">Окна</a>
+                    </div>
+                    <div class="d-flex header-bottom__bottom-links">
+                        <a class="header-bottom__bottom-link">Бренды</a>
+                        <a href="./src/pages/delivery/index.html" class="header-bottom__bottom-link">Доставка</a>
+                        <a href="" class="header-bottom__bottom-link">Возврат</a>
+                        <a class="header-bottom__bottom-link">Документация</a>
+                        <a href="./src/pages/contacts/index.html" class="header-bottom__bottom-link">Контакты</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -717,7 +754,26 @@
                 
             </div>
             <div class="reg-popup">
-                Регистрация 
+                <div class="reg-popup__title">Регистрация</div>
+                <form class="reg-popup__form" action="#" method="post">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="reg-popup__label" for="name">Имя</label>
+                            <input class="reg-popup__input" type="text" placeholder="Богдан">
+    
+                            <label class="reg-popup__label" for="password">Новый пароль</label>
+                            <input class="reg-popup__input" type="password" placeholder="****************">
+                        </div>
+                        <div class="col-6">
+                            <label class="reg-popup__label" for="email">E-mail</label>
+                            <input class="reg-popup__input" type="email" placeholder="youmail@mail.com">
+    
+                            <label class="reg-popup__label" for="password">Подтверждение пароля</label>
+                            <input class="reg-popup__input" type="password" placeholder="****************">
+                        </div>
+                    </div>
+                </form>
+                <a class="reg-popup__enter-btn" href="#">Зарегистрироваться</a>
             </div>
             <div class="city-popup">
 
@@ -733,7 +789,8 @@
             </div>
             <div class="popup-close-btn"></div>
         </div>
-        <a href="#header" class="to-top-btn"></a>
+
+        <a href="#header" class="to-top-btn"><img src="./src/img/header/totopn.png" alt=""></a>
         <script src="./src/libs/jquery/jquery.js"></script>
         <script src="./src/libs/owl/owl.carousel.min.js"></script>          
         <script src="./src/js/main.js"></script>
