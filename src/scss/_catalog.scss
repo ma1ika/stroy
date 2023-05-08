@@ -1,0 +1,44 @@
+.catalog{
+  &-home{
+      margin: 40px ;
+      padding: 40px 740px 60px 100px;
+      background: url('../img/catalog/catalog.png')  center/cover no-repeat ;
+      
+      &__title{
+        margin-top: 20px;
+        @include text(700, 48px, 120%);
+        color: #2F323A;
+      }}
+
+  &-breadCrumps{
+    &__link{
+      @include text(400, 16px, 150%);
+    }
+  }    
+
+
+
+    
+  
+  &-card{
+    background: #F6F6F6;
+    margin-top: 16px;
+    &__title{
+        @include text(500, 18px, 136%);
+        text-align: center;
+        color: #2F323A;
+        padding: 12px 12px 16px 12px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+    &__list{
+        display: flex;
+        flex-direction:column;
+    }
+    &__items{
+        padding-left: 20px;
+        background: url(../img/catalog/linkIcon.png) left center/contain no-repeat;
+    }
+  }
+}                       

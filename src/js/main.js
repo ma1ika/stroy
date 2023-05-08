@@ -40,18 +40,20 @@ $(document).ready(function(){
         $('.login-popup').fadeIn(1000)
     })
 
-    $('.popup-close-btn').click(function(){
+    $('.popup-close-btn').click(function(e){
+        e.preventDefault()
         $('.overlay').fadeOut(1000)
         $('.login-popup').fadeOut(1000)
         $('.reg-popup').fadeOut(1000)
     })
 
-    $('.login-popup__reg').click(function(){
+    $('.login-popup__reg').click(function(e){
+        e.preventDefault()
         $('.reg-popup').fadeIn(1000)
         $('.login-popup').fadeOut(1000)
     })
 
-    $('.burger-menu').click(function(){
+    $('.burger-menu').click(function(e){
         $('.header-bottom').toggleClass('active')
         $('.burger-menu').toggleClass('active')
     })
